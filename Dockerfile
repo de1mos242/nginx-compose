@@ -6,4 +6,4 @@ COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["nginx -g 'daemon off;' && cat /var/log/nginx/error.log"]
+CMD ["nginx", "-g", "daemon off;"]
